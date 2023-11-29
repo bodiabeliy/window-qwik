@@ -13,6 +13,9 @@ import "@fontsource/montserrat/300.css";
 import "@fontsource/montserrat/400.css";
 
 import UnityWindow from "./components/unity-window/unity-window";
+import { RightBlurContainer } from "./components/right-container/right-container";
+import { Navbar } from "./components/navbar/navbar";
+import { ScreenContent } from "./components/screen-content/screen-content";
 
 export default component$(() => {
   /**
@@ -31,6 +34,14 @@ export default component$(() => {
       </head>
       <body lang="en">
         {/* <RouterOutlet /> */}
+        <div class="bg-neutral-900 h-screen relative overflow-hidden">
+          <div class="f-full">
+          <Navbar />
+            <RightBlurContainer />
+            <ScreenContent />
+
+          </div>
+        </div>
         <UnityWindow />
         <ServiceWorkerRegister />
       </body>

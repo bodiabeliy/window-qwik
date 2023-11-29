@@ -23,3 +23,5 @@ export * from "./icon-del-record";
 export * from "./icon-stop-record";
 export * from "./icon-record";
 export * from "./arrow-left";
+export * from "./Edit"
+export * from "./phone"

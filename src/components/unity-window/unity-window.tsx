@@ -136,7 +136,7 @@ export default component$(() => {
   });
 
   return (
-    <main class="relative flex h-screen w-screen items-center justify-center bg-gray-medium">
+    <main class="">
       <div
         class={[
           "gradient-bd-purple-bg-dark fixed bottom-2 left-1 right-1 max-w-screen-sm rounded-3xl shadow-xl",
