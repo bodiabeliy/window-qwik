@@ -136,7 +136,7 @@ export default component$(() => {
   });
 
   return (
-    <main class="">
+    <main class="z-34">
       <div
         class={[
           "gradient-bd-purple-bg-dark fixed bottom-2 left-1 right-1 max-w-screen-sm rounded-3xl shadow-xl",
