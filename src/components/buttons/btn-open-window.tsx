@@ -15,7 +15,7 @@ export const BtnOpenWindow = component$<BtnOpenWindowProps>(
       >
         <ArrowUp
           class={`absolute transition-transform ${
-            isWindowOpened.value ? "" : "rotate-180"
+            isWindowOpened.value ? "rotate-180" : ""
           }`}
         />
       </button>

@@ -1,5 +1,7 @@
 import { component$, useSignal } from "@builder.io/qwik";
 import UWPLogo from "~/components/img/UWPLogo.png";
+import themeSwitcher from "~/components/img/darkTheme.png";
+
 import { EditButton } from "../icons";
 import { PhoneButton } from "../icons";
 
@@ -9,18 +11,28 @@ interface Props {}
 
 export const Navbar = component$<Props>(() => {
     const isMenuOpen = useSignal<boolean>(false)
-    console.log("isMenuOpen", isMenuOpen.value);
     
   return (
     <>
       <nav class="dark:bg-neutral-900">
         <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-6">
+          <div class="flex space-x-3">
           <a
-            href="https://flowbite.com/"
-            class="flex items-center space-x-3 rtl:space-x-reverse"
+            href="#"
+            class="flex items-center"
           >
             <img src={UWPLogo} class="h-8" alt="Flowbite Logo" />
           </a>
+          <a
+            href="#"
+            class="flex items-center"
+          >
+            <img src={themeSwitcher} class="h-8" alt="Flowbite Logo" />
+          </a>
+          
+          
+          </div>
+          
           <div class="flex space-x-3 rtl:space-x-reverse md:order-2 md:space-x-0">
             <button
               type="button"
@@ -30,16 +42,18 @@ export const Navbar = component$<Props>(() => {
             </button>
             <button
               type="button"
-              class="inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-rose-500 text-white hover:bg-rose-800 min-[576px]:hidden"
+              class="inline-flex h-10 w-10 items-center justify-center rounded-full  border-2 border-rose-500 text-white hover:bg-rose-800 min-[576px]:hidden"
             >
               <EditButton />
             </button>
+            
             <button
                 onClick$={()=> isMenuOpen.value = !isMenuOpen.value}
               data-collapse-toggle="navbar-default"
               type="button"
               class="inline-flex h-10 w-10 items-center justify-center p-2 text-sm text-white focus:outline-none dark:text-gray-400 dark:hover:bg-transparent min-[576px]:hidden"
             >
+              
               <svg
                 class="h-7 w-7"
                 aria-hidden="true"
@@ -47,16 +61,28 @@ export const Navbar = component$<Props>(() => {
                 fill="none"
                 viewBox="0 0 17 14"
               >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
+                {!isMenuOpen.value == true ?
+                 <path
+                 stroke="currentColor"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 stroke-width="2"
+                 d="M1 1h15M1 7h15M1 13h15"
+               />:
+               <path
+               class="rotate-45 translate-x-2"
+               stroke="currentColor"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+               stroke-width="2"
+               d="M1 5 L9 5 M5 1 L5 9"            
+               />
+               }
+               
+               
               </svg>
             </button>
-            <button class="inline-flex h-[45px] w-[176.33px] items-center justify-start gap-5 rounded-[60px] bg-rose-500 px-[25px] py-[15px] max-[576px]:hidden">
+            <button class="inline-flex h-[45px] w-[176.33px] items-center justify-start gap-5 rounded-[60px] bg-rose-500 px-[25px] py-[15px] max-[1140px]:hidden">
               <div class="text-base font-medium uppercase leading-tight text-white">
                 LET’S TALK
               </div>
