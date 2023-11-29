@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-linear': `linear-gradient(var(--tw-gradient-stops))`,
+
         'logo-mobile': "url('@/public/img/logo-mobile.png')"
       },
       colors: {
@@ -15,7 +17,10 @@ module.exports = {
         'gray-bold':' rgb(23 23 23)',
         'gray-dark': '#171717',
         "bg-radial-center":"rgba(255, 48, 77, 1)",
-        "bg-radial-out":"rgba(255, 48, 77, 0)"
+        "bg-radial-out":"rgba(255, 48, 77, 0)",
+        "title-linear-start":"#F462C1",
+        "title-linear-stop":"#3EB0F6"
+
       },
       blur: {
         "extra":"90px"
