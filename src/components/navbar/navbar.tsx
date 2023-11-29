@@ -92,7 +92,7 @@ export const Navbar = component$<Props>(() => {
             </button>
           </div>
 
-          <div class={`${!isMenuOpen.value && "hidden"} w-full md:block md:w-auto z-10`}>
+          <div class={`${!isMenuOpen.value && "hidden"} w-full md:block md:w-auto h-[530px] z-11 bg-gradient-linear from-black to-black z-30`}>
             <ul class="max-[576px]:bg-transparent z-10 mt-4 flex flex-col rounded-lg bg-gray-50 bg-neutral-900 p-6 font-medium text-white rtl:space-x-reverse dark:border-gray-700 dark:bg-gray-800 max-[576px]:h-screen md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 md:dark:bg-gray-900">
               <li >
                 <a
