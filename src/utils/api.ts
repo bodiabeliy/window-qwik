@@ -7,8 +7,8 @@ import {
 } from "~/constants";
 
 const headers = {
-  Accept: "*/*",
-  "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+  Accept: "*",
+  "User-Agent": "*",
   "Content-Type": "application/json",
 };
 
