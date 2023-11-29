@@ -139,8 +139,7 @@ export default component$(() => {
     <main>
       <div
         class={[
-          "z-33",
-          "gradient-bd-purple-bg-dark fixed bottom-2 left-1 right-1 max-w-screen-sm rounded-3xl shadow-xl",
+          "gradient-bd-purple-bg-dark fixed bottom-2 left-1 right-1 max-w-screen-sm rounded-3xl shadow-xl z-50",
           "drop-shadow-lg transition-all duration-500 min-[478px]:bottom-[52px] min-[478px]:left-2 min-[478px]:right-2",
           "min-[620px]:left-auto md:bottom-[30px] md:right-[71px]",
 
@@ -148,7 +147,7 @@ export default component$(() => {
             "max-h-[calc(100%-16px)]": isWindowOpened.value,
             "max-h-[85px]": !isWindowOpened.value,
           },
-          `${isWindowOpened.value ? "min-[620px]:w-full  min-[620px]:left-[70px]" :"min-[620px]:w-0 min-[620px]:left-[224px]"}`,
+          `${isWindowOpened.value ? "min-[620px]:w-full  min-[620px]:left-[70px]" :"min-[620px]:w-0 min-[620px]:left-[223px]"}`,
           `${!isWindowOpened.value ? "2xl:left-auto 2xl:bottom-[40px] 2xl:right-[420px]" :"2xl:w-[390px] 2xl:right-[135px]"}`
 
         ]}
