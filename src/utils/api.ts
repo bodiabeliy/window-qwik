@@ -36,11 +36,11 @@ const executeFetch = async (
 };
 
 export const textToTextApi = async (data: TFetchData) => {
-  return await executeFetch(TEXT_TO_TEXT_URL, "cors", data);
+  return await executeFetch(TEXT_TO_TEXT_URL, "no-cors", data);
 };
 
 export const textToSpeechApi = async (data: TFetchData) => {
-  return await executeFetch(TEXT_TO_SPEECH_URL, "cors", data);
+  return await executeFetch(TEXT_TO_SPEECH_URL, "no-cors", data);
 };
 
 export const speechToTextApi = async (data: TFetchData) => {
