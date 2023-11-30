@@ -141,7 +141,8 @@ export default component$(() => {
         class={[
           "gradient-bd-purple-bg-dark fixed bottom-2 left-1 right-1 max-w-screen-sm rounded-3xl shadow-xl z-50",
           "drop-shadow-lg transition-all duration-500 min-[478px]:bottom-[52px] min-[478px]:left-2 min-[478px]:right-2",
-          " md:bottom-[30px] md:right-[71px]",
+          "md:bottom-[30px] md:right-[71px]",
+          "2xl:left-auto",
 
           {
             "max-h-[calc(100%-16px)]": isWindowOpened.value,
