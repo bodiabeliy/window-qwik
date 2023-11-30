@@ -147,7 +147,7 @@ export default component$(() => {
             "max-h-[calc(100%-16px)]": isWindowOpened.value,
             "max-h-[85px]": !isWindowOpened.value,
           },
-          `${isWindowOpened.value ? "min-[620px]:w-full  min-[620px]:left-[70px]" :"min-[620px]:w-0 min-[620px]:left-[227px]"}`,
+          `${isWindowOpened.value ? "min-[620px]:w-full  min-[620px]:left-[70px]" :"min-[620px]:w-0 min-[620px]:left-[222px]"}`,
           `${!isWindowOpened.value ? "2xl:left-auto 2xl:bottom-[40px] 2xl:right-[420px]" :"2xl:w-[390px] 2xl:right-[135px]"}`
 
         ]}
