@@ -23,7 +23,7 @@ export const ScreenContent = component$<Props>(() => {
             Your reliable digital <br /> marketing partner
             </h1>
           </div>
-            <h3 class=" text-lg absolute text-zinc-300 bottom-[350px] m-auto max-w-[663px] ">
+            <h3 class=" text-lg absolute text-zinc-300 bottom-[270px] m-auto max-w-[663px] ">
             We are a full-service digital marketing agency focused on your success. We do not sell ideas. We sell a solution for your business needs.
             </h3>
         </div>
