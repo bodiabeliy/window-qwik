@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
@@ -7,7 +8,12 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-linear': `linear-gradient(var(--tw-gradient-stops))`,
 
-        'logo-mobile': "url('@/public/img/logo-mobile.png')"
+        'logo-mobile': `url('/src/components/img/logo-mobile.png')`
+      },
+      backgroundPosition: {
+  
+        'top-60': 'center top -60px',
+        'top-100': 'center top -100px',
       },
       colors: {
         'purple-light': '#8B5CF6',
